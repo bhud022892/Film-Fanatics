@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary: #0D9DA4;
+    --secondary: #D8D9CE;
+    --black: #040504;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 5px;
+    font-weight: 700;
+    display: inline-block;
+    border: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    line-height: 1.1;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btn:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

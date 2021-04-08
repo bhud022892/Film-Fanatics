@@ -1,0 +1,67 @@
+.result-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 300px;
+    height: 500px;
+    .poster {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: $secondary;
+        border-radius: 5px;
+        color: $black;
+    }
+    .filler-poster {
+        width: 100%;
+        height: 100%;
+        background-color: $secondary;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        color: $black;
+        h2 {
+            text-align: center;
+            margin: 250px auto;
+        }
+    } 
+    .poster-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        opacity: 0;
+        transition: .3s ease-in-out;
+        background-color: $primary;
+        &:hover {
+            opacity: .9;
+        }
+        .poster-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            .title {
+                color: $secondary;
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            .release-date {
+                color: $black;
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+            .btn {
+                margin: 10px;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+

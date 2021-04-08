@@ -1,0 +1,27 @@
+.watchlist-page-container {
+    max-width: 1100px;
+    margin: 0 auto 100px auto;
+    .header {
+        margin: 20px;
+        .heading {
+            color: $primary;
+            text-align: center;
+            .film-count {
+                color: $black;
+            }
+        }
+    }
+    .movie-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .no-movies {
+        color: $black;
+        text-align: center;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,0 +1,46 @@
+@import 'variables';
+
+// Footer Styles 
+.footer-container {
+    background-color: $black;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    .footer-content {
+        height: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        align-items: center;
+        .website-rights p {
+            text-align: center;
+            color: $secondary;
+            font-size: .75rem;
+            margin: 20px auto;
+            @media screen and (max-width: 768px) {
+                font-size: 1rem;
+            }
+            }
+        }
+        .social-links {
+            text-align: center;
+            margin: 20px auto;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            .social {
+                color: $secondary;
+                text-decoration: none;
+                margin-left: 20px;
+                @media screen and (max-width: 768px) {
+                    font-size: 1.25rem;
+                }
+            }
+            .social:hover {
+                color: $primary;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }

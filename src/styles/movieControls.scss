@@ -1,0 +1,17 @@
+.ctrl-btn {
+    color: $secondary;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 0;
+    &:focus {
+        outline: none;
+    }
+}
+
+.ctrl-btn:hover {
+    color: $primary;
+    cursor: pointer;
+}
