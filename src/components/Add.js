@@ -13,7 +13,7 @@ export const Add = () => {
         setQuery(e.target.value)
 
         fetch(
-            `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1&include_adult=false&query=${e.target.value}`
+            `https://api.themoviedb.org/3/search/movie?api_key=727b1c077e943d0bf6f6a9852ce9e699&language=en-US&page=1&include_adult=false&query=${e.target.value}`
         )
         .then((res) => res.json())
         .then((data) => {
